@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>contact | futo's site</title>
+	<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link href="main.css" rel="stylesheet">
+	<link href="img/icon.jpg" type="image/jpg" rel="icon">
+	<meta name="description" content="Contact Futo!">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		#page{
+			height:100vh;
+			position:relative;
+		}
+		#footer{
+			position:absolute;
+			bottom:0;
+		}
+		form input,form textarea, form button{
+			font-family: 'Inria Sans',sans-serif;
+			color:#545454;
+			font-style: italic;
+			font-size:1.7em;
+			border-width: 2px;
+			border-radius: 10px;
+			border-color: #ADD7D6;
+			margin-bottom: 10px
+		}
+		#content{
+			width:800px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top:100px;
+			text-align: center;
+		}
+		#name{
+			margin-right: 12px;
+		}
+		#name, #email{
+			width:390px;
+			height:50px;
+			float:left;
+		}
+		#subject, #textarea-id{
+			width:800px;
+		}
+		#subject{
+			height:50px;
+		}
+		#textarea-id{
+			height:200px;
+		}
+		#submit{
+			width:300px;
+			margin-left: auto;
+			margin-right: auto;
+			background-color:#ADD7D6; 
+		}
+
+
+	</style>
+	<script>
+		window.onload=function(){
+			if(document.getElementById("page")!=null){
+				document.getElementById("page").style.opacity=1;
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="page">
+		<!-- menu -->
+		<div id="menu" class="menu-wrapper-fixed">
+			<div id="logo">
+				<a href="home.html">
+					<img src="img/icon.jpg" alt="futo's icon">
+				</a>
+			</div>
+			<div id="nav">
+				<ul>
+					<li id="animation"><a href="animation.html">animation</a></li>
+					<li id="illustration"><a href="illustration.html">illustration</a></li>
+					<li id="design"><a href="design.html">design</a></li>
+					<li id="about"><a href="about.html">about</a></li>
+					<li id="contact"><a id="activenav" href="contact.html">contact</a></li>
+				</ul>
+				<div class="clearfloat"></div>
+			</div>
+		</div><!-- end menu -->
+		<div id="content">
+			<h1>contact:</h1>
+			<form action="confirmation.html">
+				<input type="text" id="name" value="name">
+				<input type="text" id="email" value="email">
+				<div class="clearfloat"></div>
+				<input type="text" id="subject" value="subject">
+				<textarea id="textarea-id">for resumes, projects, or just to say hi...</textarea>
+				<button type="submit" id="submit">Submit!</button>
+			</form>
+		</div>
+		<div id="footer">
+			&copy;2020 by Futo Wada
+		</div>
+
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</body>
+</html>

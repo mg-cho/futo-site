@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>illustration | futo's site</title>
+	<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link href="main.css" rel="stylesheet">
+	<link href="img/icon.jpg" type="image/jpg" rel="icon">
+	<meta name="description" content="Futo Wada's illustrations page - Yokai series + other.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		.menu-wrapper-fixed{
+			top:0px;
+		}
+		#page{
+			opacity: 0;
+			transition:opacity 2s;
+		}
+		#content{
+			font-weight: 300px;
+			margin-top: 100px;
+			margin-right: auto;
+			margin-left: auto;
+			width:880px;
+		}
+		
+		#p-small{
+			margin-bottom:8px;
+		}
+		#p-small2{
+			margin-top: 8px;
+		}
+		p{
+			font-style: italic;
+		}
+		#yokai img{
+			float: left;
+		}
+		#kodama{
+			width:380px;
+			height:auto;
+			margin-right: 10px;
+		}
+		#petapeta{
+			width:478px;
+			height:auto;
+		}
+		#kappa{
+			width:478px;
+			height:auto;
+			margin-top:10px;
+		}
+		#sea{
+			position:relative;
+			/*margin-top:10px;*/
+			margin-right:10px;
+			width:380px;
+			height:auto;
+			top:-260px;
+		}
+		#zasiki{
+			width:478px;
+			height:auto;
+			margin-top:10px;
+		}
+		#other{
+			text-align: center;
+		}
+		#stingrays{
+			width:706px;
+			height:auto;
+		}
+		#yokai{
+			margin-top:30px;
+			width:880px;
+			margin-right:auto;
+			margin-left:auto;
+		}
+	</style>
+	<script>
+		window.onload=function(){
+			if(document.getElementById("page")!=null){
+				document.getElementById("page").style.opacity=1;
+			}
+		}
+
+	</script>
+</head>
+<body>
+	<div id="page">
+		<!-- menu -->
+		<div id="menu" class="menu-wrapper-fixed">
+			<div id="logo">
+				<a href="home.html">
+					<img src="img/icon.jpg" alt="futo's icon">
+				</a>
+			</div>
+			<div id="nav">
+				<ul>
+					<li id="animation"><a href="animation.html">animation</a></li>
+					<li id="illustration"><a id="activenav" href="illustration.html">illustration</a></li>
+					<li id="design"><a href="design.html">design</a></li>
+					<li id="about"><a href="about.html">about</a></li>
+					<li id="contact"><a href="contact.html">contact</a></li>
+				</ul>
+				<div class="clearfloat"></div>
+			</div>
+		</div><!-- end menu -->
+
+		<div id="content">
+			<h1>​妖怪 (yokai) series</h1>
+			<p id="p-small">a series of work based on my experience growing up in an environment that deemed my japanese culture too foreign.</p>
+			<p id="p-small2">featuring yokais (japanese mythological creatures) that can never fully integrate into society, it explores the delicate balance between assimilation and cultural preservation.</p>
+			<div id="yokai">
+				<img id="kodama" src="img/kodama.jpg" alt="kodamas (forest guardians) watch as human children jump rope beneath their tree - distant observers.">
+				<img id="petapeta" src="img/petapeta.jpg" alt="the last piece in the series - child stands in front of a petapeta (a creature one cannot see), looking out into the hallway but can see nothing, as the creature's footprints show it is standing right in front of the child.">
+				<img id="kappa" src="img/kappa2.jpg" alt="a lone kappa (sea creature) in the shadows of the kelp holding a beach ball, looking forlornly at the two children playing with their own ball on the surface of the water.">
+				<img id="sea" src="img/sea.jpg" alt="a water woman - the protector of the sea - with the whole ocean as her body looks out onto a fleet of ships sailing away. her gaze holds judgement, but is not unkind.">
+				<img id="zasiki" src="img/zasiki.jpg" alt="zasiki is a creature that hides in closets to bring fortune to the house (most often portrayed as a little girl). here, she hides in a mirror as a child walks by. she sits with her knees drawn up to her chest, gaze downcast.">
+
+				<div class="clearfloat"></div>
+			</div> <!-- end of yokai section -->
+			<div id="other">
+				<h1>other illustrations</h1>	
+				<img id="stingrays" src="img/fantasy-world.jpg" alt="a child sits atop a roof in a rainstorm with their black cat. they look out upon a lush landscape of mountains and pine trees as a school of flying incorporeal stingrays lazily glide past.">
+			</div>
+
+		</div> <!-- end content -->
+		<div id="footer">
+			&copy;2020 by Futo Wada
+		</div>
+	</div> <!-- end page -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</body>
+</html>

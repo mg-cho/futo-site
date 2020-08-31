@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>design | futo's site</title>
+	<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link href="main.css" rel="stylesheet">
+	<link href="img/icon.jpg" type="image/jpg" rel="icon">
+	<meta name="description" content="Futo Wada's design page.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+
+		#content{
+			width:700px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top:100px;
+			/*text-align: center;*/
+		}
+		#content > img{
+			width:700px;
+			height:auto;
+			margin:10px 0px;
+		}
+		h1{
+			margin:10px 0px;
+		}
+		#content > p {
+			font-style: italic;
+		}
+	</style>
+	<script>
+		window.onload=function(){
+			if(document.getElementById("page")!=null){
+				document.getElementById("page").style.opacity=1;
+			}
+		}
+
+	</script>
+</head>
+<body>
+	<div id="page">
+		<!-- menu -->
+		<div id="menu" class="menu-wrapper-fixed">
+			<div id="logo">
+				<a href="home.html">
+					<img src="img/icon.jpg" alt="futo's icon">
+				</a>
+			</div>
+			<div id="nav">
+				<ul>
+					<li id="animation"><a href="animation.html">animation</a></li>
+					<li id="illustration"><a href="illustration.html">illustration</a></li>
+					<li id="design"><a id="activenav" href="design.html">design</a></li>
+					<li id="about"><a href="about.html">about</a></li>
+					<li id="contact"><a href="contact.html">contact</a></li>
+				</ul>
+				<div class="clearfloat"></div>
+			</div>
+		</div><!-- end menu -->
+
+		<div id="content">
+			<h1>growing - a series</h1>
+			<p>a set of design frames about the bittersweet feeling of growing up</p>
+			<img src="img/styleframe-thing-2.jpg" alt="colorful image of a small child peeking over a table at two burgers and a mcdonald's happy meal">
+			<img src="img/stylefram-idea-2.jpg" alt="colorful image of three pairs of legs, a kid's, a teen's, and an adult's, which seem to be standing in line">
+			<img src="img/style-playground.jpg" alt="a colorful playground in the palm of a hand">
+		</div>
+		<div id="footer">
+			&copy;2020 by Futo Wada
+		</div>
+
+	</div> <!-- end page -->
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</body>
+</html>
